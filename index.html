@@ -23,7 +23,7 @@
       var nodes = {};
 
       function init() {
-        Papa.parse('/data.csv', {
+        Papa.parse(document.URL + '/data.csv', {
           download: true,
           complete: function(results) {
             console.log("CSV data downloaded");
